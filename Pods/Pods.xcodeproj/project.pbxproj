@@ -11,6 +11,16 @@
 		276BD091705188B49AEE43836D9C7F4C /* Pods-WHCollapsiblePieChart_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE06468E4606E8D5D45AD731FDD27E18 /* Pods-WHCollapsiblePieChart_Tests-dummy.m */; };
 		31423D4D485E30D24FA2D91137673D95 /* WHCollapsiblePieChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CE9EFBF9E60E0536C349B46F68D9DE /* WHCollapsiblePieChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421E43A82F773E57EF2D23E3DD06620C /* Pods-WHCollapsiblePieChart_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20394CEBE576949C43F07D692F13158E /* Pods-WHCollapsiblePieChart_Example-dummy.m */; };
+		64C112A023DF7960008B7F67 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C1129E23DF795F008B7F67 /* PieChart.swift */; };
+		64C112A123DF7960008B7F67 /* PieChartDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C1129F23DF795F008B7F67 /* PieChartDelegate.swift */; };
+		64C112A423DF7972008B7F67 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C112A223DF7971008B7F67 /* CGRect.swift */; };
+		64C112A523DF7972008B7F67 /* FloatingPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C112A323DF7972008B7F67 /* FloatingPoint+Extension.swift */; };
+		64C112A723DF797C008B7F67 /* PieChartLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C112A623DF797C008B7F67 /* PieChartLayer.swift */; };
+		64C112AA23DF7986008B7F67 /* PieSliceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C112A823DF7986008B7F67 /* PieSliceData.swift */; };
+		64C112AB23DF7986008B7F67 /* PieSliceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C112A923DF7986008B7F67 /* PieSliceModel.swift */; };
+		64C112AF23DF799A008B7F67 /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C112AC23DF799A008B7F67 /* PieSlice.swift */; };
+		64C112B023DF799A008B7F67 /* PieSliceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C112AD23DF799A008B7F67 /* PieSliceDelegate.swift */; };
+		64C112B123DF799A008B7F67 /* PieSliceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C112AE23DF799A008B7F67 /* PieSliceLayer.swift */; };
 		7A658FBBDCFB9DFE68C29DC97B3E9D21 /* Pods-WHCollapsiblePieChart_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE6ADBE4D114B811EBA1CB13CAEB9D32 /* Pods-WHCollapsiblePieChart_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CDCAAC582235B8947C080EF581A1CA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A100EC2F66149BF9CA2FF0783522549A /* WHCollapsiblePieChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A133BCA83B9DC281C0E1E234BC6D6ED /* WHCollapsiblePieChart-dummy.m */; };
@@ -39,26 +49,36 @@
 /* Begin PBXFileReference section */
 		0A133BCA83B9DC281C0E1E234BC6D6ED /* WHCollapsiblePieChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WHCollapsiblePieChart-dummy.m"; sourceTree = "<group>"; };
 		10C1AC450C3FB1F66936B915C1A8E9B2 /* Pods-WHCollapsiblePieChart_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WHCollapsiblePieChart_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		172F5BC22DB22DD407AA4E09F3E3EA69 /* Pods_WHCollapsiblePieChart_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WHCollapsiblePieChart_Tests.framework; path = "Pods-WHCollapsiblePieChart_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		172F5BC22DB22DD407AA4E09F3E3EA69 /* Pods_WHCollapsiblePieChart_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WHCollapsiblePieChart_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CD9988D180DE7A9FB4739DAE7EF954 /* Pods-WHCollapsiblePieChart_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WHCollapsiblePieChart_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		20394CEBE576949C43F07D692F13158E /* Pods-WHCollapsiblePieChart_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WHCollapsiblePieChart_Example-dummy.m"; sourceTree = "<group>"; };
 		21C4BBC43EA653AF4405882CEC57143C /* Pods-WHCollapsiblePieChart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WHCollapsiblePieChart_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3270231DEE43A230ACB252A994E66F66 /* WHCollapsiblePieChart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WHCollapsiblePieChart-Info.plist"; sourceTree = "<group>"; };
-		5A1C7B816408A0C6264CFBD8652BB117 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5A1C7B816408A0C6264CFBD8652BB117 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5BE92C2ACAC26121E0259DDAE59C99FE /* WHCollapsiblePieChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WHCollapsiblePieChart.modulemap; sourceTree = "<group>"; };
 		633A107592D6787621C7F23793AEFF65 /* WHCollapsiblePieChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WHCollapsiblePieChart-prefix.pch"; sourceTree = "<group>"; };
-		6912FE7B3FDBBDB698853A70179A7B90 /* WHCollapsiblePieChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WHCollapsiblePieChart.framework; path = WHCollapsiblePieChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C1129E23DF795F008B7F67 /* PieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		64C1129F23DF795F008B7F67 /* PieChartDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartDelegate.swift; sourceTree = "<group>"; };
+		64C112A223DF7971008B7F67 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		64C112A323DF7972008B7F67 /* FloatingPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Extension.swift"; sourceTree = "<group>"; };
+		64C112A623DF797C008B7F67 /* PieChartLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartLayer.swift; sourceTree = "<group>"; };
+		64C112A823DF7986008B7F67 /* PieSliceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSliceData.swift; sourceTree = "<group>"; };
+		64C112A923DF7986008B7F67 /* PieSliceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSliceModel.swift; sourceTree = "<group>"; };
+		64C112AC23DF799A008B7F67 /* PieSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSlice.swift; sourceTree = "<group>"; };
+		64C112AD23DF799A008B7F67 /* PieSliceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSliceDelegate.swift; sourceTree = "<group>"; };
+		64C112AE23DF799A008B7F67 /* PieSliceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSliceLayer.swift; sourceTree = "<group>"; };
+		6912FE7B3FDBBDB698853A70179A7B90 /* WHCollapsiblePieChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WHCollapsiblePieChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FE9F437861286DDEA3AF29EF738CBD /* Pods-WHCollapsiblePieChart_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WHCollapsiblePieChart_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7B5CE5BD0BA42AA503E3E2D376CAB579 /* WHCollapsiblePieChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WHCollapsiblePieChart.xcconfig; sourceTree = "<group>"; };
-		7C3B491D6D86A5552EE3092C98C0B0DB /* Pods_WHCollapsiblePieChart_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WHCollapsiblePieChart_Example.framework; path = "Pods-WHCollapsiblePieChart_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3B491D6D86A5552EE3092C98C0B0DB /* Pods_WHCollapsiblePieChart_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WHCollapsiblePieChart_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		844AF51A2A5FB049722EB4D361CE3101 /* Pods-WHCollapsiblePieChart_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WHCollapsiblePieChart_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		845D1BC043D87028F5E7AAA13D451FC5 /* Pods-WHCollapsiblePieChart_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WHCollapsiblePieChart_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		921C2A0576258E477DA53C9DB09E074A /* Pods-WHCollapsiblePieChart_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WHCollapsiblePieChart_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		99CE9EFBF9E60E0536C349B46F68D9DE /* WHCollapsiblePieChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WHCollapsiblePieChart-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AAD81039265597529D9BBEC28801AF94 /* WHCollapsiblePieChart.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WHCollapsiblePieChart.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ACB053D26CFA472A8FB0F4FB0B97ED6C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AAD81039265597529D9BBEC28801AF94 /* WHCollapsiblePieChart.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WHCollapsiblePieChart.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ACB053D26CFA472A8FB0F4FB0B97ED6C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BD3719A2D3A6872E5A74209060762825 /* Pods-WHCollapsiblePieChart_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WHCollapsiblePieChart_Tests-Info.plist"; sourceTree = "<group>"; };
 		BD472C66060733F78636308F7CD80B2B /* Pods-WHCollapsiblePieChart_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WHCollapsiblePieChart_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C361EB23618D3F2C0B35546EE8E0750F /* Pods-WHCollapsiblePieChart_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WHCollapsiblePieChart_Example.modulemap"; sourceTree = "<group>"; };
@@ -116,6 +136,63 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		64C1129823DF78C4008B7F67 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				64C1129D23DF78F1008B7F67 /* Slice */,
+				64C1129C23DF78EE008B7F67 /* Model */,
+				64C1129B23DF78E9008B7F67 /* Layer */,
+				64C1129A23DF78E4008B7F67 /* Extension */,
+				64C1129923DF78D2008B7F67 /* Chart */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		64C1129923DF78D2008B7F67 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				64C1129E23DF795F008B7F67 /* PieChart.swift */,
+				64C1129F23DF795F008B7F67 /* PieChartDelegate.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		64C1129A23DF78E4008B7F67 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				64C112A223DF7971008B7F67 /* CGRect.swift */,
+				64C112A323DF7972008B7F67 /* FloatingPoint+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		64C1129B23DF78E9008B7F67 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				64C112A623DF797C008B7F67 /* PieChartLayer.swift */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		64C1129C23DF78EE008B7F67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64C112A823DF7986008B7F67 /* PieSliceData.swift */,
+				64C112A923DF7986008B7F67 /* PieSliceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64C1129D23DF78F1008B7F67 /* Slice */ = {
+			isa = PBXGroup;
+			children = (
+				64C112AC23DF799A008B7F67 /* PieSlice.swift */,
+				64C112AD23DF799A008B7F67 /* PieSliceDelegate.swift */,
+				64C112AE23DF799A008B7F67 /* PieSliceLayer.swift */,
+			);
+			path = Slice;
+			sourceTree = "<group>";
+		};
 		6BF62685F194B4B7FEBD4D607103CCBF /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +237,7 @@
 		9DDB3A1ACA3E0842AD5B1E5AA7B9B382 /* WHCollapsiblePieChart */ = {
 			isa = PBXGroup;
 			children = (
+				64C1129823DF78C4008B7F67 /* Source */,
 				F4E15C6408CE1227C635B521DEB4D323 /* ReplaceMe.swift */,
 				6BF62685F194B4B7FEBD4D607103CCBF /* Pod */,
 				8F8555F5E0B6F8925973840A6A79EDC8 /* Support Files */,
@@ -372,8 +450,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C112A523DF7972008B7F67 /* FloatingPoint+Extension.swift in Sources */,
+				64C112B123DF799A008B7F67 /* PieSliceLayer.swift in Sources */,
+				64C112A123DF7960008B7F67 /* PieChartDelegate.swift in Sources */,
+				64C112A023DF7960008B7F67 /* PieChart.swift in Sources */,
+				64C112A423DF7972008B7F67 /* CGRect.swift in Sources */,
+				64C112AB23DF7986008B7F67 /* PieSliceModel.swift in Sources */,
+				64C112A723DF797C008B7F67 /* PieChartLayer.swift in Sources */,
+				64C112AA23DF7986008B7F67 /* PieSliceData.swift in Sources */,
+				64C112AF23DF799A008B7F67 /* PieSlice.swift in Sources */,
 				CDAA078C31597B1692F5721BBAED6AB9 /* ReplaceMe.swift in Sources */,
 				A100EC2F66149BF9CA2FF0783522549A /* WHCollapsiblePieChart-dummy.m in Sources */,
+				64C112B023DF799A008B7F67 /* PieSliceDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +507,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/WHCollapsiblePieChart/WHCollapsiblePieChart-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WHCollapsiblePieChart/WHCollapsiblePieChart-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WHCollapsiblePieChart/WHCollapsiblePieChart.modulemap";
 				PRODUCT_MODULE_NAME = WHCollapsiblePieChart;
@@ -451,7 +539,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-WHCollapsiblePieChart_Tests/Pods-WHCollapsiblePieChart_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WHCollapsiblePieChart_Tests/Pods-WHCollapsiblePieChart_Tests.modulemap";
@@ -485,7 +573,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-WHCollapsiblePieChart_Tests/Pods-WHCollapsiblePieChart_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WHCollapsiblePieChart_Tests/Pods-WHCollapsiblePieChart_Tests.modulemap";
@@ -518,7 +606,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-WHCollapsiblePieChart_Example/Pods-WHCollapsiblePieChart_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WHCollapsiblePieChart_Example/Pods-WHCollapsiblePieChart_Example.modulemap";
@@ -583,13 +671,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -646,7 +733,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -675,7 +762,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-WHCollapsiblePieChart_Example/Pods-WHCollapsiblePieChart_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WHCollapsiblePieChart_Example/Pods-WHCollapsiblePieChart_Example.modulemap";
@@ -709,7 +796,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/WHCollapsiblePieChart/WHCollapsiblePieChart-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WHCollapsiblePieChart/WHCollapsiblePieChart-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WHCollapsiblePieChart/WHCollapsiblePieChart.modulemap";
 				PRODUCT_MODULE_NAME = WHCollapsiblePieChart;
