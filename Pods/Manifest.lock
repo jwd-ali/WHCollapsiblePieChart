@@ -1,0 +1,16 @@
+PODS:
+  - WHCollapsiblePieChart (0.1.0)
+
+DEPENDENCIES:
+  - WHCollapsiblePieChart (from `../`)
+
+EXTERNAL SOURCES:
+  WHCollapsiblePieChart:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WHCollapsiblePieChart: 6c2c906460d87deadac2136dfc7405dae5049875
+
+PODFILE CHECKSUM: 5f3da41c472f8fa49ee7c01650349a4ab5147859
+
+COCOAPODS: 1.8.3

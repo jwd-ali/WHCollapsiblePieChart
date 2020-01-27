@@ -1,0 +1,22 @@
+{
+  "name": "WHCollapsiblePieChart",
+  "version": "0.1.0",
+  "summary": "A short description of WHCollapsiblePieChart.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wajahathassan64/WHCollapsiblePieChart",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wajahathassan64": "wajahat@digitify.com"
+  },
+  "source": {
+    "git": "https://github.com/wajahathassan64/WHCollapsiblePieChart.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WHCollapsiblePieChart/Classes/**/*"
+}
