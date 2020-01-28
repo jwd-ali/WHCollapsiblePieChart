@@ -17,8 +17,6 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-
   s.homepage         = 'https://github.com/wajahathassan64/WHCollapsiblePieChart'
   s.screenshots     = 'https://png.pngtree.com/png-vector/20190118/ourmid/pngtree-vector-pie-chart-icon-png-image_327562.jpg', 'https://png.pngtree.com/png-vector/20190118/ourmid/pngtree-vector-pie-chart-icon-png-image_327562.jpg'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -33,4 +31,4 @@ Pod::Spec.new do |s|
   s.platforms = {
       "ios": "11.4"
   }
-end
+  end
