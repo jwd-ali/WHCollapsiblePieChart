@@ -1,0 +1,6 @@
+framework module WHCollapsiblePieChart {
+  umbrella header "WHCollapsiblePieChart-umbrella.h"
+
+  export *
+  module * { export * }
+}

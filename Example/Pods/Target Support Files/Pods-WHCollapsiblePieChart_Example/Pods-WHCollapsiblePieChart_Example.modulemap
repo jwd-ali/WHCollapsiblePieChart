@@ -1,0 +1,6 @@
+framework module Pods_WHCollapsiblePieChart_Example {
+  umbrella header "Pods-WHCollapsiblePieChart_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

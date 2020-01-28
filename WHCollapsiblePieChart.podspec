@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WHCollapsiblePieChart'
-  s.version          = '0.1.1'
+  s.version          = '0.1.0'
   s.summary          = 'WHCollapsiblePieChart is a kind of hollow Pie chart which can be creat using few lines of code.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.4'
 
-  s.source_files = 'Source/**/*'
+  s.source_files = 'Source/**/*.swift'
   s.swift_version = '4.0'
   s.platforms = {
       "ios": "11.4"
