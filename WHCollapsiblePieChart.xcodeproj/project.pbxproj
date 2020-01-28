@@ -212,7 +212,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = WL24K46YGJ;
+						DevelopmentTeam = 58CML5JC4P;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -479,7 +479,7 @@
 			baseConfigurationReference = C728B7600B36CC7C905498C4 /* Pods-WHCollapsiblePieChart_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WL24K46YGJ;
+				DEVELOPMENT_TEAM = 58CML5JC4P;
 				INFOPLIST_FILE = WHCollapsiblePieChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -495,7 +495,7 @@
 			baseConfigurationReference = 20D497E1F2F50D6F754E74E0 /* Pods-WHCollapsiblePieChart_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WL24K46YGJ;
+				DEVELOPMENT_TEAM = 58CML5JC4P;
 				INFOPLIST_FILE = WHCollapsiblePieChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
