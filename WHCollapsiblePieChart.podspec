@@ -31,8 +31,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.4'
 
-  s.source_files = 'Source/**/*.swift'
-  s.swift_version = '4.0'
+  s.source_files = 'WHCollapsiblePieChart/**/*'
+  s.swift_version = '5.0'
   s.platforms = {
       "ios": "11.4"
   }
