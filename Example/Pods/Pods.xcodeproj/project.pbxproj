@@ -137,58 +137,18 @@
 		64C1129823DF78C4008B7F67 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				64C1129D23DF78F1008B7F67 /* Slice */,
-				64C1129C23DF78EE008B7F67 /* Model */,
-				64C1129B23DF78E9008B7F67 /* Layer */,
-				64C1129A23DF78E4008B7F67 /* Extension */,
-				64C1129923DF78D2008B7F67 /* Chart */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		64C1129923DF78D2008B7F67 /* Chart */ = {
-			isa = PBXGroup;
-			children = (
-				64C1129E23DF795F008B7F67 /* PieChart.swift */,
-				64C1129F23DF795F008B7F67 /* PieChartDelegate.swift */,
-			);
-			path = Chart;
-			sourceTree = "<group>";
-		};
-		64C1129A23DF78E4008B7F67 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				64C112A223DF7971008B7F67 /* CGRect.swift */,
-				64C112A323DF7972008B7F67 /* FloatingPoint+Extension.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		64C1129B23DF78E9008B7F67 /* Layer */ = {
-			isa = PBXGroup;
-			children = (
-				64C112A623DF797C008B7F67 /* PieChartLayer.swift */,
-			);
-			path = Layer;
-			sourceTree = "<group>";
-		};
-		64C1129C23DF78EE008B7F67 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				64C112A823DF7986008B7F67 /* PieSliceData.swift */,
-				64C112A923DF7986008B7F67 /* PieSliceModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		64C1129D23DF78F1008B7F67 /* Slice */ = {
-			isa = PBXGroup;
-			children = (
 				64C112AC23DF799A008B7F67 /* PieSlice.swift */,
 				64C112AD23DF799A008B7F67 /* PieSliceDelegate.swift */,
 				64C112AE23DF799A008B7F67 /* PieSliceLayer.swift */,
+				64C112A823DF7986008B7F67 /* PieSliceData.swift */,
+				64C112A923DF7986008B7F67 /* PieSliceModel.swift */,
+				64C112A623DF797C008B7F67 /* PieChartLayer.swift */,
+				64C112A223DF7971008B7F67 /* CGRect.swift */,
+				64C112A323DF7972008B7F67 /* FloatingPoint+Extension.swift */,
+				64C1129E23DF795F008B7F67 /* PieChart.swift */,
+				64C1129F23DF795F008B7F67 /* PieChartDelegate.swift */,
 			);
-			path = Slice;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		6BF62685F194B4B7FEBD4D607103CCBF /* Pod */ = {
