@@ -33,12 +33,4 @@ Pod::Spec.new do |s|
   s.platforms = {
       "ios": "11.4"
   }
-  
-  # s.resource_bundles = {
-  #   'WHCollapsiblePieChart' => ['WHCollapsiblePieChart/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
